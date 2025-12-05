@@ -1,11 +1,10 @@
 name: NatWest CI/CD Pipeline
 
-# Trigger this pipeline whenever we push code
 on: [push]
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest  # The cloud computer (runner)
+    runs-on: ubuntu-latest 
 
     steps:
       - name: Checkout Code
