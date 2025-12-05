@@ -14,14 +14,3 @@ A containerized Python/Flask application demonstrating a full CI/CD pipeline usi
 1.  **Development:** Code is written locally and containerized using Docker to ensure environment consistency.
 2.  **Continuous Integration (CI):** Upon pushing to `main`, GitHub Actions triggers a workflow that installs dependencies and runs unit tests via `pytest`.
 3.  **Continuous Deployment (CD):** If tests pass, the container is automatically built and deployed to the cloud (Render).
-
-## How to Run Locally
-```bash
-# Clone the repo
-git clone [https://github.com/Projavax/natwest-cloud-demo.git](https://github.com/Projavax/natwest-cloud-demo.git)
-
-# Build the Docker container
-docker build -t natwest-app .
-
-# Run the container (Port 5001)
-docker run -p 5001:5001 natwest-app
